@@ -1,0 +1,50 @@
+[
+  {
+    "name": "whoami_command",
+    "kind": "keyword",
+    "pattern": "whoami",
+    "severity": "low"
+  },
+  {
+    "name": "eval_call",
+    "kind": "keyword",
+    "pattern": "eval(",
+    "severity": "medium"
+  },
+  {
+    "name": "cmd_shell_binary",
+    "kind": "keyword",
+    "pattern": "cmd.exe",
+    "severity": "medium"
+  },
+  {
+    "name": "base64_cli_decoder",
+    "kind": "keyword",
+    "pattern": "base64 -d",
+    "severity": "low"
+  },
+  {
+    "name": "system_call_pattern",
+    "kind": "regex",
+    "pattern": "\\b(system|popen|exec)\\s*\\(",
+    "severity": "high"
+  },
+  {
+    "name": "sensitive_file_reference",
+    "kind": "regex",
+    "pattern": "/etc/(passwd|hosts|shadow)",
+    "severity": "high"
+  },
+  {
+    "name": "windows_reg_query",
+    "kind": "regex",
+    "pattern": "reg\\s+query\\s+hklm",
+    "severity": "low"
+  },
+  {
+    "name": "suspicious_download_verb",
+    "kind": "regex",
+    "pattern": "\\b(curl|wget)\\s+https?://",
+    "severity": "medium"
+  }
+]

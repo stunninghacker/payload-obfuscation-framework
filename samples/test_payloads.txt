@@ -1,0 +1,11 @@
+# Harmless sample strings for classroom demos — nothing here is malicious.
+whoami
+eval(
+test_string_123
+cmd.exe /c echo hello
+system(popen)
+cat /etc/hosts
+curl https://example.com
+reg query hklm\software
+hello world
+print("lab exercise")

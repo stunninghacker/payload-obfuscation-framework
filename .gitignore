@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Testing
+.pytest_cache/
+.coverage
+
+# Generated reports (regenerate with: python main.py report)
+reports/*.json
+reports/*.txt
+!reports/.gitkeep
